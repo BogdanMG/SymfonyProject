@@ -66,13 +66,13 @@ class TokenController extends AbstractController
                     }
                     break;
 
-                    case $input->sort_on_date:
+                    case $input->sort_by_date:
 
-                    if($input->sort_on_date == "forward"){
+                    if($input->sort_by_date == "forward"){
                         $products = $this->getDoctrine()->getRepository(Products::class)->sortOnDate();
                         return new Response(json_encode($products));
             
-                    }elseif($input->sort_on_date == "reverse"){
+                    }elseif($input->sort_by_date == "reverse"){
                             $products = $this->getDoctrine()->getRepository(Products::class)->sortOnDateRev();
                         return new Response(json_encode($products));
                     }else{
