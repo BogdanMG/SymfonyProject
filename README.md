@@ -11,7 +11,7 @@
 `"total_prices" : true`
 `}`
 
-- Show min or max price of goods.
+- Show min or max price of the goods.
 
 `{`
    `"price": "min/max"`
@@ -36,7 +36,7 @@
     `"date_to" : value`
 `}`
 
-- Get upper or lower bound of goods.
+- Get upper or lower bound of the goods.
 `{`
  `"upper_bound" : value (`true` or `null`),`
  `"lower_bound" : value (`true` or `null`)`
